@@ -1,0 +1,23 @@
+.skill{
+    padding: 10px;
+
+    color: #000000;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    
+}
+.title{
+  
+    color: #000000;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+}
+
+.title{
+    margin-top: 35%;
+}
+.skills{
+    margin-top: 15%;
+}

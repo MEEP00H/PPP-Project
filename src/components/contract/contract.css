@@ -1,0 +1,57 @@
+.address,
+.facebook,
+.git,
+.mail,
+.phone{
+    padding: 10px;
+}
+.contracts{
+    margin-top: 40vh;
+    text-align-last: left;
+}
+.address:before{
+    content: '';
+    background:url('../../assets//contract/address.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-50px;
+}
+.facebook:before{
+    content: '';
+    background:url('../../assets//contract/facebook.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-50px;
+}
+
+.git:before{
+    content: '';
+    background:url('../../assets//contract/github.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-50px;
+}
+.mail:before{
+    content: '';
+    background:url('../../assets//contract/mail.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-50px;
+}
+.phone:before{
+    content: '';
+    background:url('../../assets//contract/phone.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-50px;
+}

@@ -1,0 +1,10 @@
+.codeEle{
+    width: 50vw;
+    height: 5vh;
+    position: absolute;
+    left: 30vw;
+    margin-top: 45vh;
+    /* transform: rotate(0deg); */
+
+    background: url('../../../assets/element/coding.png') bottom / contain no-repeat;
+}

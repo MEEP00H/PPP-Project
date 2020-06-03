@@ -1,0 +1,31 @@
+.cover {
+    width: 100vw;
+    top: 120%;
+
+    position: absolute;
+    z-index: 20;
+
+    color: white;
+}
+.text {
+    width: 50vw;
+    font-size: 1.5vw;
+    margin: auto;
+
+    text-shadow: 3px #000;
+    
+    opacity: 0;
+    transform: translateY(25px);
+    transition: 0.4s all linear;
+  
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}

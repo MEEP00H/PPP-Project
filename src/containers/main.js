@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import axios from '../axios-order';
-
+import './main.css';
 import Intro from '../components/intro/Intro';
 import CoverLetter from '../components/cover-letter/cover-letter';
 import Profile from '../components/profile/profile';
 import Programming from '../components/skills/programming';
 import Contract from '../components/contract/contract';
 import NavigationBar from '../components/navigationBar/navigationBar';
-import TimeLine from '../components/timeLine/timeLine'
-
+import TimeLine from '../components/timeLine/timeLine';
+import MyGallery from '../components/myGallery/myGallery';
+import Loading from '../components/UI/loading/loading';
 
 export default class main extends Component {
 
@@ -19,7 +20,8 @@ export default class main extends Component {
         position : '',
         skills:'',
         contract: '',
-        experience: ''
+        experience: '',
+        error:false
     }
 
     async componentDidMount(){
@@ -49,23 +51,41 @@ export default class main extends Component {
             })
         await axios.get('/experience.json')
             .then(res =>{
-                this.setState({ experience:res.data })
+                this.setState({ experience:res.data }) 
+            }).catch(error => {
+                this.setState({error:true})
             })
     }   
 
     render() {
+        let page = this.state.error ? <p>can't be loaded</p> : <Loading/>;
+
+        if(this.state.experience){
+            page = (
+                <div className = 'main' id = 'main'>
+                    <NavigationBar/>
+                    <Intro/>
+                    <CoverLetter cover = {this.state.intro}/>
+                    <Profile profileImg = {this.state.profileImg}
+                            name = {this.state.name}
+                            position = {this.state.position}
+                    />
+                    <Programming pgSkills = {this.state.skills.programmings}/>
+                    <TimeLine experience = {this.state.experience}/>
+                    <MyGallery myGallery = {this.state.contract.gallery}/>
+                    <Contract contract = {this.state.contract}/>
+                </div>
+            )
+        }
+
+        setTimeout(function() {
+            document.getElementById('load').style.display = 'none';
+            document.getElementById('main').style.display = 'block';
+        }, 9500);
         return (
             <div>
-                <NavigationBar/>
-                <Intro/>
-                <CoverLetter cover = {this.state.intro}/>
-                <Profile profileImg = {this.state.profileImg}
-                        name = {this.state.name}
-                        position = {this.state.position}
-                />
-                <Programming pgSkills = {this.state.skills.programmings}/>
-                <TimeLine experience = {this.state.experience}/>
-                <Contract contract = {this.state.contract}/>
+                <Loading/>
+                {page}
             </div>
         )
     }

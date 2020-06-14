@@ -1,0 +1,98 @@
+.flex-myGallery{
+    display: flex;
+    margin-top: 5%;
+}
+.img-myGallery{
+    flex-grow: 2;
+    width:40%;
+}
+.myGallery{
+    flex-grow: 8;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    margin: 15% 0 0 10%;
+}
+.gallery {
+    display: flex;
+    padding: 0 4px;
+    margin-top: 15%;
+    
+}
+  
+.photos {
+
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px; 
+
+}
+  
+.photos img {
+    margin-top: 8px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .myGallery{
+    flex-grow: 1;
+    margin: 25% 0 0 15%;
+  }
+  .gallery {
+    margin-top: 33%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .myGallery{
+    flex-grow: 1;
+    margin: 25% 0 0 15%;
+  }
+  .gallery {
+    margin-top: 10%;
+  }
+  .img-myGallery{
+    flex-grow: 8;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .myGallery{
+    flex-grow: 1;
+    margin: 15% 0 0 15%;
+  }
+  .gallery {
+    margin-top: 10px;
+  }
+}
+
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .myGallery{
+      flex-grow: 4;
+      margin: 15% 0 0 15%;
+    }
+    .gallery {
+      margin-top: 5px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .myGallery{
+      flex-grow: 1;
+      margin: 25% 0 0 15%;
+    }
+    .gallery {
+      margin-top: 15%;
+    }
+    .img-myGallery{
+      flex-grow: 8;
+    }
+}

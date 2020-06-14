@@ -5,7 +5,7 @@ import '../settingBg.css';
 const contract = (props) => {
     
     return (
-        <div className = 'bg' id = 'contract'>
+        <div className = 'bg-contract' id = 'contract'>
             <div className = 'flex-container'>
                 <div className = 'contracts'>
                     <div className = 'address'> {props.contract.address}</div>

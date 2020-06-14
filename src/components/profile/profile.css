@@ -8,13 +8,9 @@
     width: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.name,
-.navigation{
-    margin-top: 10vh;
-}
 
 .name{  
-
+    margin-top: 10vh;
     font-family: Ramaraja;
     font-style: normal;
     font-weight: normal;
@@ -37,4 +33,147 @@
 }
 .nName{
     margin-top: 20vh;
+}
+
+@media screen and (max-width: 800px) {
+    .profileImg{
+        margin-top: 15vh;
+        width: 250px;
+    }
+    .position{
+        margin-top: 8vh;
+    }
+    .nName{
+        margin-top: 8vh;
+    }
+    .name{  
+        margin-top: 13vh;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .profileImg{
+        margin-top: 19vh;
+        width: 150px;
+    }
+    .position{
+        margin-top: 8vh;
+        font-size: 8px;
+    }
+    .nName{
+        margin-top: 5vh;
+    }
+    .name{  
+        margin-top: 15vh;
+    }
+    .fName,
+    .lName,
+    .name{
+        font-size: 15px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .profileImg{
+        margin-top: 15vh;
+        width: 200px;
+    }
+    .fName,
+    .lName,
+    .name{
+        font-size: 15px;
+        height: 20px;
+    }
+    .position{
+        margin-top: 20vh;
+        font-size: 10px;
+    }
+    .nName{
+        margin-top: 15vh;
+    }
+    .name{  
+        margin-top: 15vh;
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .profileImg{
+        margin-top: 10vh;
+        width: 200px;
+    }
+    .fName,
+    .lName,
+    .name{
+        font-size: 18px;
+        height: 20px;
+    }
+    .position{
+        margin-top: 20vh;
+        font-size: 10px;
+    }
+    .nName{
+        margin-top: 13vh;
+    }
+    .name{  
+        margin-top: 10vh;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .profileImg{
+        margin-top: 19vh;
+        width: 150px;
+    }
+    .position{
+        margin-top: 8vh;
+        font-size: 8px;
+    }
+    .nName{
+        margin-top: 5vh;
+    }
+    .name{  
+        margin-top: 16vh;
+    }
+    .fName,
+    .lName,
+    .name{
+        font-size: 13px;
+        height: 20px;
+    }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .profileImg{
+        margin-top: 15vh;
+        width: 150px;
+    }
+    .fName,
+    .lName,
+    .name{
+        font-size: 15px;
+        height: 20px;
+    }
+    .position{
+        margin-top: 10vh;
+        font-size: 10px;
+    }
+    .nName{
+        margin-top: 6vh;
+    }
+    .name{  
+        margin-top: 10vh;
+    }
 }

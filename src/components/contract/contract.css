@@ -55,3 +55,107 @@
     height:20px;
     margin-left:-50px;
 }
+.bg-contract{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+@media screen and (max-width: 800px) {
+    .contracts{
+        margin-top: 23vh;
+    }
+    .address,
+    .facebook,
+    .git,
+    .mail,
+    .phone{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .contracts{
+        margin-top: 40vh;
+    }
+    .address,
+    .facebook,
+    .git,
+    .mail,
+    .phone{
+        font-size: 10px;
+    }
+    .address:before,
+    .facebook:before,
+    .git:before,
+    .mail:before,
+    .phone:before{
+        width:15px;
+        height:15px;
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .contracts{
+        margin-top: 23vh;
+    }
+    .address,
+    .facebook,
+    .git,
+    .mail,
+    .phone{
+        font-size: 13px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .contracts{
+        margin-top: 40vh;
+    }
+    .address,
+    .facebook,
+    .git,
+    .mail,
+    .phone{
+        font-size: 8px;
+    }
+    .address:before,
+    .facebook:before,
+    .git:before,
+    .mail:before,
+    .phone:before{
+        width:15px;
+        height:15px;
+    }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .address,
+    .facebook,
+    .git,
+    .mail,
+    .phone{
+        font-size: 5px;
+    }
+    .address:before,
+    .facebook:before,
+    .git:before,
+    .mail:before,
+    .phone:before{
+        width:13px;
+        height:13px;
+        margin-top: -3px;
+    }
+}

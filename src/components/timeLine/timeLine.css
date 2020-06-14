@@ -80,4 +80,36 @@
     line-height: 50px;
     letter-spacing: 0.1em;
   }
-  
+
+@media screen and (max-width: 800px) {
+  .bgTimeLine {
+      width: 80%;
+      margin: auto;
+  }
+  .experience {
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .bgTimeLine {
+    width: 100%;
+    margin: auto;
+  }
+  .experience {
+    margin-top: 0;
+  }
+  .timeline::after {
+    width: 1px;
+  }
+  .container::after {
+    display: none
+  }
+  .container {
+    padding: 5px 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .experience {
+    margin-top: 0;
+  }
+}

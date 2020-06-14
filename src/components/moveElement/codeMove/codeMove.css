@@ -8,3 +8,56 @@
 
     background: url('../../../assets/element/coding.png') bottom / contain no-repeat;
 }
+@media screen and (max-width: 800px) {
+    .codeEle{
+        height: 3vh;
+        margin-top: 25vh;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .codeEle{
+        height: 2vh;
+        margin-top: 20vh;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .codeEle{
+        height: 5vh;
+        margin-top: 30vh;
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .codeEle{
+        height: 6vh;
+        margin-top: 28vh;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .codeEle{
+        height: 2vh;
+        margin-top: 8vh;
+    }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .codeEle{
+        height: 2vh;
+        margin-top: 10vh;
+    }
+}

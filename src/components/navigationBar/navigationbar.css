@@ -3,8 +3,8 @@
     font-size: 2vw;
     transform: rotate(90deg);
     z-index: 1;
-    top: 50%;
-    margin-left: -20vh
+    top: 46%;
+    margin-left: -30vh
 
 }
 html {
@@ -14,7 +14,8 @@ html {
 .tag1,
 .tag2,
 .tag3,
-.tag4{
+.tag4,
+.tag5{
     text-decoration : none;
     color: black;
     
@@ -29,6 +30,73 @@ html {
 .tag1:hover,
 .tag2:hover,
 .tag3:hover,
-.tag4:hover{
+.tag4:hover,
+.tag5:hover{
     text-decoration : underline;
+}
+
+@media screen and (max-width: 800px) {
+    .navigate{
+        top: 31%;
+        margin-left: -13vh
+    
+    }
+}
+@media only screen and (max-width: 420px) {
+    .navigate{
+       opacity: 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .navigate{
+        top: 45vh;
+        margin-left: -30vh
+    }
+}
+
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .navigate{
+        font-size: 13px;
+        top: 45vh;
+        margin-left: -38vh
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .navigate{
+        opacity: 0;
+     }
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .navigate{
+        opacity: 0;
+     }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .navigate{
+        font-size: 13px;
+        top: 45vh;
+        margin-left: -30vh
+    }
 }

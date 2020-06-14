@@ -12,8 +12,6 @@
     font-size: 1.5vw;
     margin: auto;
 
-    text-shadow: 3px #000;
-    
     opacity: 0;
     transform: translateY(25px);
     transition: 0.4s all linear;
@@ -28,4 +26,46 @@
 .reveal {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media screen and (max-width: 800px) {
+    .cover {
+        top: 75%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .cover {
+        top: 150vh;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .cover {
+        top: 180vh;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .cover {
+        top: 80vh;
+    }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .cover {
+        top: 80vh;
+    }
 }
